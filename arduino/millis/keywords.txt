@@ -1,0 +1,25 @@
+#######################################
+# Syntax Coloring Map SPI
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+millis_t	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+millis_init	KEYWORD2
+millis_get	KEYWORD2
+millis_resume	KEYWORD2
+millis_pause	KEYWORD2
+millis_reset	KEYWORD2
+millis_add	KEYWORD2
+millis_subtract	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
