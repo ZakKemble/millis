@@ -14,7 +14,7 @@
 #include <avr/interrupt.h>
 #include "millis/millis.h"
 
-int led_blink()
+int main()
 {
 	// Initialize library
 	millis_init();

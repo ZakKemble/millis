@@ -1,2 +1,7 @@
+2013-02-11:
+	- Arduino example was using normal millis(), changed to millis_get()
+	- Added #defines to Arduino example for setting LED pins
+	- Changed led_blink() to main() in non-Arduino example
+
 2013-02-10:
 	- Initial release
