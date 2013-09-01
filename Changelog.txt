@@ -1,3 +1,8 @@
+2013-09-01:
+	- Many improvements
+	- Support for selecting which timer to use
+	- Doxygen
+
 2013-02-11:
 	- Arduino example was using normal millis(), changed to millis_get()
 	- Added #defines to Arduino example for setting LED pins

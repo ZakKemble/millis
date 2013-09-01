@@ -1,6 +1,6 @@
 /*
  * Project: Lightweight millisecond tracking library
- * Author: Zak Kemble, me@zakkemble.co.uk
+ * Author: Zak Kemble, contact@zakkemble.co.uk
  * Copyright: (C) 2013 by Zak Kemble
  * License: GNU GPL v3 (see License.txt)
  * Web: http://blog.zakkemble.co.uk/millisecond-tracking-library-for-avr/
@@ -8,11 +8,9 @@
 
 // Blink 2 LEDs, one every 500ms and the other every 700ms
 
-#define F_CPU 8000000L
-
 #include <avr/io.h>
 #include <avr/interrupt.h>
-#include "millis/millis.h"
+#include "millis.h"
 
 int main()
 {
@@ -20,7 +18,7 @@ int main()
 	millis_init();
 
 	// Port D 2 and 3 as outputs
-	DDRD |= (1<<DDD2)|(1<<DDD3);
+	DDRD |= _BV(DDD2)|_BV(DDD3);
 
 	// Enable interrupts
 	sei();
@@ -35,20 +33,20 @@ int main()
 		millis_t now = millis();
 
 		// Has it been 500ms since last change for LED1?
-		if(now - lastChangeLed1 > 500)
+		if(now - lastChangeLed1 >= 500)
 		{
 			// Toggle LED
-			PORTD ^= (1<<PORTD2);
+			PORTD ^= _BV(PORTD2);
 			
 			// Store time
 			lastChangeLed1 = now;
 		}
 
 		// Has it been 700ms since last change for LED2?
-		if(now - lastChangeLed2 > 700)
+		if(now - lastChangeLed2 >= 700)
 		{
 			// Toggle LED
-			PORTD ^= (1<<PORTD3);
+			PORTD ^= _BV(PORTD3);
 			
 			// Store time
 			lastChangeLed2 = now;

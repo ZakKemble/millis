@@ -1,6 +1,6 @@
 /*
  * Project: Lightweight millisecond tracking library
- * Author: Zak Kemble, me@zakkemble.co.uk
+ * Author: Zak Kemble, contact@zakkemble.co.uk
  * Copyright: (C) 2013 by Zak Kemble
  * License: GNU GPL v3 (see License.txt)
  * Web: http://blog.zakkemble.co.uk/millisecond-tracking-library-for-avr/
@@ -35,7 +35,7 @@ void loop()
 	millis_t now = millis_get();
 
 	// Has it been 500ms since last change for LED1?
-	if(now - lastChangeLed1 > 500)
+	if(now - lastChangeLed1 >= 500)
 	{
 		// Toggle LED
 		stateLed1 = !stateLed1;
@@ -46,7 +46,7 @@ void loop()
 	}
 
 	// Has it been 700ms since last change for LED2?
-	if(now - lastChangeLed2 > 700)
+	if(now - lastChangeLed2 >= 700)
 	{
 		// Toggle LED
 		stateLed2 = !stateLed2;
