@@ -23,7 +23,9 @@ typedef unsigned long millis_t;
 #define MILLIS_TIMER1 1 /**< Use timer1. */
 #define MILLIS_TIMER2 2 /**< Use timer2. */
 
-#define MILLIS_TIMER MILLIS_TIMER2 /**< Which timer to use. */
+#ifndef MILLIS_TIMER
+  #define MILLIS_TIMER MILLIS_TIMER2 /**< Which timer to use. */
+#endif
 
 #ifndef ARDUINO
 /**
