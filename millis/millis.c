@@ -46,7 +46,11 @@
 #define REG_OCR			OCR0A
 #define BIT_WGM			WGM01
 #define BIT_OCIE		OCIE0A
-#define ISR_VECT		TIMER0_COMPA_vect
+#ifdef TIMER0_COMPA_vect
+	#define ISR_VECT		TIMER0_COMPA_vect
+#else
+	#define ISR_VECT		TIM0_COMPA_vect
+#endif
 #define pwr_enable()	power_timer0_enable()
 #define pwr_disable()	power_timer0_disable()
 
