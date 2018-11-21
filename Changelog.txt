@@ -1,3 +1,6 @@
+2018-11-21:
+	- Licensing change: was GPL-3.0 only, now GPL-3.0 or MIT
+
 2013-09-01:
 	- Many improvements
 	- Support for selecting which timer to use

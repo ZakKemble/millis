@@ -1,9 +1,9 @@
 /*
  * Project: Lightweight millisecond tracking library
- * Author: Zak Kemble, contact@zakkemble.co.uk
- * Copyright: (C) 2013 by Zak Kemble
- * License: GNU GPL v3 (see License.txt)
- * Web: http://blog.zakkemble.co.uk/millisecond-tracking-library-for-avr/
+ * Author: Zak Kemble, contact@zakkemble.net
+ * Copyright: (C) 2018 by Zak Kemble
+ * License: GNU GPL v3 (see License_GPL-3.0.txt) or MIT (see License_MIT.txt)
+ * Web: http://blog.zakkemble.net/millisecond-tracking-library-for-avr/
  */
 
 #ifndef MILLIS_H_
