@@ -126,7 +126,7 @@ void millis_init()
 	SET_TCCRA();
 	SET_TCCRB();
 	REG_TIMSK = _BV(BIT_OCIE);
-	REG_OCR = ((F_CPU / PRESCALER) / 1000);
+	REG_OCR = ((F_CPU / PRESCALER) / 1000 - 1);
 }
 
 // Get current milliseconds
