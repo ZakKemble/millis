@@ -32,7 +32,7 @@
 // Timer0
 
 #if F_CPU > 16320000 // 16.32MHz - 65.28MHz
-	#define CLOCKSEL (_BV(CS20))
+	#define CLOCKSEL (_BV(CS02))
 	#define PRESCALER 256
 #elif F_CPU > 2040000 // 2.04MHz - 16.32MHz
 	#define CLOCKSEL (_BV(CS01)|_BV(CS00))
